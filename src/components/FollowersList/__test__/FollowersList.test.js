@@ -29,6 +29,7 @@ describe("FollowersList", () => {
     //     console.log("RUNS ONCE AFTER ALL TESTS")
     // })
 
+    // async - await is not going to work with getBeyTestId so that we use findByTestId
     it('should fetch and render input element', async () => {
         render(
             <MockFollowersList />
@@ -37,6 +38,7 @@ describe("FollowersList", () => {
         expect(followerDivElement).toBeInTheDocument();
     });
     
+
     it('should fetch and render input element', async () => {
         render(
             <MockFollowersList />
