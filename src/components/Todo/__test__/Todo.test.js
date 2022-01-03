@@ -10,6 +10,8 @@ const MockTodo = () => {
     )
 }
 
+
+//to make our code more clean
 const addTask = (tasks) => {
     const inputElement = screen.getByPlaceholderText(/Add a new task here.../i);
     const buttonElement = screen.getByRole("button", { name: /Add/i} );
